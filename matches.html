@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prandaan Connect | Matches Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="matches.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.13.0/dist/tf.min.js"></script>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Prandaan Connect</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="donor.html">Donor</a></li>
+                <li><a href="recipient.html">Recipient</a></li>
+                <li><a href="matches.html">Match</a></li>
+            </ul>
+            <button class="mobile-menu">&#9776;</button>
+        </div>
+    </nav>
+    <div class="matches-page">
+        <div class="dashboard-container">
+            <div class="dashboard-header">
+                <h1>Organ Matches</h1>
+                <p>See the latest donor-recipient matches and their compatibility scores.</p>
+            </div>
+            <div class="dashboard-grid">
+                <div class="chart-card">
+                    <h2>Statistics</h2>
+                    <p id="stat-donors">Total Donors: ...</p>
+                    <p id="stat-recipients">Total Recipients: ...</p>
+                    <p id="stat-matches">Successful Matches: ...</p>
+                </div>
+                <div class="matches-grid" id="matchesGrid">
+                    <!-- Match cards will be inserted here by JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
